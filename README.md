@@ -1,13 +1,13 @@
-Create a new directory for the project and initialize it with npm:
+Created a new directory for the project and initialize it with npm:
 mkdir inventory-tracker
 cd inventory-tracker
 npm init -y
 
-Install TypeScript and other dependencies- npm install typescript @types/node --save-dev
+Installed TypeScript and other dependencies- npm install typescript @types/node --save-dev
 
-Create a tsconfig.json file: npx tsc --init
+Created a tsconfig.json file: npx tsc --init
 
-set the folder similar to this folder 
+setted the folder similar to this folder 
 structure inventory-tracker/
 ├── src/
 │   ├── models/
@@ -19,7 +19,7 @@ structure inventory-tracker/
 │   └── main.ts
 └── tsconfig.json
 
-followed the instruction from the assignment.
+followed the instruction from the assignment. and did below-
 
 products.ts contains product class with properties sku, name and price assigs the values with constructor. Has fucntions displayDetails that returns string with details of that product and getPriceWithTax that returns number and calculates price with tax.
 

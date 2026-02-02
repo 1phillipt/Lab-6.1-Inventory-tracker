@@ -9,7 +9,7 @@ import { Product } from "./Product.ts";
     }
     
     getPriceWithTax() :number {
-        return this.price*0.10 + this.price;
+        return this.price * 0.10 + this.price;
     }
 
     get formattedWeight(): string{

@@ -9,10 +9,10 @@ export class DigitalProduct extends Product {
 
     }
     getPriceWithTax() :number {
-        return this.price; //no tax
+        return this.price; //there is no required tax so 
     }
 
-    get formattedFileSize(): string{
+    getformattedFileSize(): string{
         return `${this.fileSize} MB`
     }
 }

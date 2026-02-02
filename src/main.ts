@@ -10,6 +10,18 @@ const myProducts: Product[] = [
 ]
 
 
-for( const product of myProducts){
-    console.log(product);
-}
+type ProductDetail = {
+  product: Product;
+  tax: number;
+};
+
+const itemWithTaxPrice: ProductDetail[] = myProducts.map(product => {
+  const tax = calculateTax(product)-product.price;
+
+  return {
+    product,
+    tax
+  };
+});
+
+itemWithTaxPrice.forEach(item => console.log(item));

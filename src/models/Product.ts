@@ -11,7 +11,7 @@
         this.price = price;
     }
 
-    displayDetails(){
+    displayDetails():string{
         return `Product name ${this.name} with sku ${this.sku} and price ${this.price}`;
         
     }
